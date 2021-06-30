@@ -1,0 +1,67 @@
+endpoints :
+
+/create-mentor : to create mentor
+
+sample json:
+
+{
+    "mentor_name":"xxxx",
+    "id_no": ""
+}
+
+
+/show-mentor : show mentor records
+
+/create-student : create student records
+
+sample json:
+
+{
+    "student_name":"opq",
+    "id_no": ""
+}
+
+
+
+/show-student : show student records 
+
+
+/assign-student-mentor : to add new students or reassign students to mentors and update student records about the mentor update, simultaneously
+
+sample json:
+
+{   
+    "mentorName": "xxx",
+    "mentorID": X,
+    "student_list":[
+        {
+            "studentName": "yyyy",
+            "studentID" : Y
+        },
+        {
+            "studentName": "OOOO",
+            "studentID" : O
+        }
+    ]
+
+}
+
+use below json format to remove all students from a mentor and update student records status of mentor assigned to no mentor or nil or empty, simultaneously
+{   
+    "mentorName": "ram",
+    "mentorID": 2,
+    "student_list":[
+
+    ]
+
+}
+
+show-mentor/all-students : show all students assigned to a particular mentor
+
+sample json:
+
+{
+    "mentorID" : X
+}
+
+show-student/without-mentor : show students without mentor
