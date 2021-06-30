@@ -5,7 +5,7 @@ var mongoClient = mongodb.MongoClient
 
 app.use(express.json())
 
-var dbUrl = "mongodb+srv://tumbuktoo:valentinorossi1@@cluster0.ehete.mongodb.net/<dbName>?retryWrites=true&w=majority"
+var dbUrl = <your-db-url-here>
 
 //api to create mentor records
 
